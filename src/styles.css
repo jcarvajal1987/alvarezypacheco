@@ -12,9 +12,13 @@ html {
 
 .icono1{
     fill: #104C77;
+    margin: auto;
 }
 .text-prod{
     color: #104C77;
+}
+.text-prod2{
+    color: #595959;
 }
 .product{
     background-color: #ffffff;
@@ -27,6 +31,9 @@ html {
     background-color: #104C77!important;
 }
 .product:hover  .text-prod{
+    color: #ffffff;
+}
+.product:hover  .text-prod2{
     color: #ffffff;
 }
 
