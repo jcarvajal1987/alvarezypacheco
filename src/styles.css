@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icono1{
+    fill: #104C77;
+}
+.text-prod{
+    color: #104C77;
+}
+.product{
+    background-color: #ffffff;
+}
+
+.product:hover .icono1{
+    fill: #ffffff!important;
+}
+.product:hover{
+    background-color: #104C77!important;
+}
+.product:hover  .text-prod{
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size:15px
+    }
+
+    .min-h-auto-important {
+        max-height: none!important
+    }
+
+    .min-h-lm {
+        min-height: calc(100vh - 61px)
+    }
+
+    .bg-front {
+        background-position: 50%;
+        background-size: cover
+    }
+}
