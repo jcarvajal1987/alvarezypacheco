@@ -4,8 +4,8 @@
   "description": "",
 
   "scripts": {
-    "build": "postcss ./src/styles.css -o ./public/css/main.css",
-    "watch": "postcss ./src/styles.css -o ./public/css/main.css --watch"
+    "build": "postcss ./src/styles.css -o ./docs/css/main.css",
+    "watch": "postcss ./src/styles.css -o ./docs/css/main.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
