@@ -590,9 +590,6 @@ video {
 .h-2\/5 {
   height: 40%;
 }
-.h-\[117px\] {
-  height: 117px;
-}
 .h-\[1px\] {
   height: 1px;
 }
@@ -622,9 +619,6 @@ video {
 }
 .h-screen {
   height: 100vh;
-}
-.w-3 {
-  width: 0.75rem;
 }
 .w-\[100px\] {
   width: 100px;
@@ -681,6 +675,9 @@ video {
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -741,11 +738,21 @@ video {
 .border-2 {
   border-width: 2px;
 }
+.border-\[1\.3px\] {
+  border-width: 1.3px;
+}
 .border-\[1\.5px\] {
   border-width: 1.5px;
 }
 .border-\[1px\] {
   border-width: 1px;
+}
+.border-t-\[1px\] {
+  border-top-width: 1px;
+}
+.border-\[\#6C6C6C\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(108 108 108 / var(--tw-border-opacity));
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
@@ -757,7 +764,7 @@ video {
 }
 .border-primary2 {
   --tw-border-opacity: 1;
-  border-color: rgb(16 76 119 / var(--tw-border-opacity));
+  border-color: rgb(11 55 114 / var(--tw-border-opacity));
 }
 .border-transparent {
   border-color: transparent;
@@ -801,6 +808,10 @@ video {
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(11 52 82 / var(--tw-bg-opacity));
+}
+.bg-primary2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 55 114 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
@@ -909,6 +920,10 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-5 {
   padding-top: 1.25rem;
@@ -1034,7 +1049,7 @@ video {
 }
 .text-primary2 {
   --tw-text-opacity: 1;
-  color: rgb(16 76 119 / var(--tw-text-opacity));
+  color: rgb(11 55 114 / var(--tw-text-opacity));
 }
 .text-stone-900 {
   --tw-text-opacity: 1;
@@ -1110,6 +1125,11 @@ html {
 }
 .product:hover  .text-prod2{
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .kyo {width: 210px;
+    margin-top: 10px;}
 }
 
 @media (min-width: 768px) {
@@ -1346,6 +1366,11 @@ html {
     margin-right: 0px;
   }
 
+  .md\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1422,10 +1447,6 @@ html {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:rounded-lg {
-    border-radius: 0.5rem;
   }
 
   .md\:border-0 {

@@ -49,6 +49,11 @@ html {
     color: #ffffff;
 }
 
+@media (max-width: 768px) {
+    .kyo {width: 210px;
+    margin-top: 10px;}
+}
+
 @media (min-width: 768px) {
     html {
         font-size:15px
