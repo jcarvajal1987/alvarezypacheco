@@ -9,7 +9,19 @@ html {
 .montserrat{
     font-family: 'Montserrat', sans-serif;
 }
-
+.ajuste{
+    background-color: #0B3452 ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.ajuste2{
+    width: 180px!important;
+    margin-top: 7px;
+    transition: width 1s;
+}
+.kyo{
+    width: 260px;
+    transition: width 1s;
+}
 .icono1{
     fill: #104C77;
     margin: auto;

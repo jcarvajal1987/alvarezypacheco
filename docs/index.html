@@ -11,10 +11,10 @@
 </head>
 
 <body>
-  <nav class="px-4 md:px-8 lg:px-16 py-2.5 md:py-0 absolute w-full">
-    <div class="max-w-[1440px]  m-auto flex flex-wrap items-center justify-between "><a class="flex items-center "
-        href="#1"><img object-fit="fill" alt="LM Tech" width="260" height="18" decoding="async" data-nimg="1"
-          style="color:transparent" class="mt-6 xs:w-[10px]" src="img/logo-white.svg"></a><button onclick="expandir()"
+  <div></div>
+  <nav id="navbar" class="xs:bg-black z-10 px-4 md:px-8 lg:px-16 py-2.5 md:py-0 fixed w-full">
+    <div class="max-w-[1440px]  m-auto flex flex-wrap items-center justify-between senior "><a href="#home" class="flex items-center"><img alt="LM Tech" height="18" decoding="async" data-nimg="1"
+          style="color:transparent" class="kyo transition mt-6 xs:w-[10px]" src="img/logo-white.svg"></a><button onclick="expandir()"
         data-collapse-toggle="navbar-solid-bg" type="button"
         class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-solid-bg" aria-expanded="false"><span class="sr-only">Open main menu</span>
@@ -26,15 +26,15 @@
           </svg></li>
       </button>
       <div style="max-height:0;"
-        class=" absolute md:static  left-0 top-[56px] z-20 duration-700 overflow-hidden w-full md:block md:w-auto min-h-auto-important"
+        class="bg-black md:bg-transparent  absolute md:static  left-0 top-[86px] duration-700 overflow-hidden w-full md:block md:w-auto min-h-auto-important"
         id="abrir">
         <ul onclick="expandir()" id="altura"
-          class="p-5 md:p-0 flex flex-col pt-4 rounded-lg md:flex-row md:space-x-8 md:pt-0 md:text-sm md:font-medium md:border-0 md:dark:bg-transparent dark:border-gray-700">
+          class="p-5  md:p-0 flex flex-col pt-4 rounded-lg md:flex-row md:space-x-8 md:pt-0 md:text-sm md:font-medium md:border-0 md:dark:bg-transparent dark:border-gray-700">
           <li><a
-              class="bg-primary text-white md:bg-transparent duration-100 block py-2 px-4 md:border-b-[3px] md:pt-5 md:pb-4"
+              class=" text-gray-400  md:bg-transparent duration-100 block py-2 px-4 md:border-b-[3px] md:pt-5 md:pb-4 border-transparent"
               href="#nosotros">Nosotros</a></li>
           <li><a
-              class=" text-gray-400  md:hover:text-white hover:text-white border-black-1 duration-100 block py-2 px-4 md:border-b-[3px] border-transparent md:pt-5 md:pb-4"
+              class=" text-gray-400  md:hover:text-white  duration-100 block py-2 px-4 md:border-b-[3px] border-transparent md:pt-5 md:pb-4"
               href="#servicios">Servicios</a></li>
           <li><a
               class=" text-gray-400  md:hover:text-white hover:text-white border-black-1 duration-100 block py-2 px-4 md:border-b-[3px] border-transparent md:pt-5 md:pb-4"
@@ -50,7 +50,7 @@
     </div>
   </nav>
 
-  <section style="background-image:url('img/bg.jpg')" class="bg-front grid w-full items-center bg-no-repeat bg-cover">
+  <section id="home" style="background-image:url('img/bg.jpg')" class="encabezado bg-front grid w-full items-center bg-no-repeat bg-cover">
     <div class=" col-start-1  row-start-1 h-screen md:block"></div>
     <div class="bg-black bg-opacity-[70%] col-start-1 row-start-1 flex flex-1 w-full h-full flex-col">
       <div class="h-[57px]">
@@ -85,7 +85,7 @@
 
 <!-- <nosotros></nosotros> -->
 
-  <section id="nosotros" class="bg-front grid w-full ">
+  <section id="nosotros" class="encabezado bg-front grid w-full ">
     <div class="  col-start-1 row-start-1 flex flex-1 w-full h-full flex-col">
       <div class="h-[77px]">
       </div>
@@ -192,7 +192,7 @@
     </div>
   </section>
 
-  <section id="servicios" class="bg-primary flex w-full ">
+  <section id="servicios" class="encabezado bg-primary flex w-full ">
     
     <div
     class="  col-start-1 row-start-1 flex flex-1 w-full h-full flex-col bg-gradient-radial bg-neutral-200 ">
@@ -477,7 +477,7 @@
 
   <!-- publicaciones -->
 
-  <section id="actualidad" class="flex w-full bg-gradient-to-b from-neutral-200 to-[#C8C8C8] ">
+  <section id="actualidad" class="encabezado flex w-full bg-gradient-to-b from-neutral-200 to-[#C8C8C8] ">
     <div class="w-3 hidden md:block ">
 </div>
     <div class="col-start-1 row-start-1 flex flex-1 w-full h-full flex-col bg-primary rounded-md overflow-hidden">
@@ -504,7 +504,7 @@
                 class="montserrat !leading-6 md:!leading-5 pt-4 md:pt-2 text-md sm:text-sm font-medium text-white">
                 Mediante la Nueva Ley se permite suspender y eliminar las deudas.
               </p>
-              <button  class=" w-auto text-black bg-neutral-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full px-3 py-1.5 text-center mt-5">Leer Artículo</button>
+              <button  class=" w-auto text-black bg-neutral-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-1.5 text-center mt-5">Leer Artículo</button>
             </span>
 
           </a>
@@ -518,7 +518,7 @@
                 class="montserrat !leading-6 md:!leading-5 pt-4 md:pt-2 text-md sm:text-sm font-medium text-white">
                 Contáctate por cualquiera de nuestros canales a distancia
               </p>
-              <button  class=" w-auto text-black bg-neutral-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full px-3 py-1.5 text-center mt-5">Leer Artículo</button>
+              <button  class=" w-auto text-black bg-neutral-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  px-3 py-1.5 text-center mt-5">Leer Artículo</button>
             </span>
 
           </a>
@@ -532,7 +532,7 @@
                 class="montserrat !leading-6 md:!leading-5 pt-4 md:pt-2 text-md sm:text-sm font-medium text-white">
                 Consulta los requisitos para declararte en insolvencia
               </p>
-              <button  class=" w-auto text-black bg-neutral-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full px-3 py-1.5 text-center mt-5">Leer Artículo</button>
+              <button  class=" w-auto text-black bg-neutral-100 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  px-3 py-1.5 text-center mt-5">Leer Artículo</button>
             </span>
 
           </a>
@@ -551,7 +551,7 @@
 
   <!-- Portafolio -->
 
-  <section id="inmobiliaria" class="grid w-full bg-gradient-radial from-[#F3F3F3] via-[#F3F3F3] to-[#C8C8C8]">
+  <section id="inmobiliaria" class="encabezado grid w-full bg-gradient-radial from-[#F3F3F3] via-[#F3F3F3] to-[#C8C8C8]">
     <div class="col-start-1 row-start-1 flex flex-1 w-full h-2/5 bg-black2 self-end flex-col ">
 
     </div>
@@ -621,7 +621,7 @@
 
   <!-- contacto -->
 
-  <section id="contacto" class="grid w-full bg-black2 ">
+  <section id="contacto" class="encabezado grid w-full bg-black2 ">
     <div class="col-start-1 row-start-1 flex flex-1 w-full h-2/5 bg-black2 self-end flex-col ">
 
     </div>
@@ -637,42 +637,42 @@
               Solicite una Consulta
             </h1>
             <div class="flex mt-7">
-              <span class="w-[100px] z-10 h-[1px] bg-[#2B9CEE] block  mb-[-2px]"></span>
-              <span class="w-full z-10 h-[1px] bg-[#6C6C6C] block mb-[-2px]"></span>
+              <span class="w-[100px]  h-[1px] bg-[#2B9CEE] block  mb-[-2px]"></span>
+              <span class="w-full  h-[1px] bg-[#6C6C6C] block mb-[-2px]"></span>
             </div>
 
             <p class="text-white pt-7 pb-5 montserrat ">Contactenos y nuestro equipo le respondera sus consultas a la
               brevedad.</p>
 
             <form>
-              <div class="relative z-0 w-full mb-6 group">
+              <div class="relative w-full mb-6 group">
                 <input type="email" name="floating_email" id="floating_email"
                   class="rounded-lg px-2 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" " required />
                 <label for="floating_email"
-                  class="bg-black2 z-10 px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre
+                  class="bg-black2  px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 - origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre
                   y Apellido</label>
               </div>
-              <div class="relative z-0 w-full mb-6 group">
+              <div class="relative w-full mb-6 group">
                 <input type="password" name="floating_password" id="floating_password"
                   class="rounded-lg px-2 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" " required />
                 <label for="floating_password"
-                  class="bg-black2 z-10 px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+                  class="bg-black2  px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 - origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
               </div>
-              <div class="relative z-0 w-full mb-6 group">
+              <div class="relative w-full mb-6 group">
                 <input type="password" name="repeat_password" id="floating_repeat_password"
                   class="rounded-lg px-2 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" " required />
                 <label for="floating_repeat_password"
-                  class="bg-black2 z-10 px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Teléfono</label>
+                  class="bg-black2  px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 - origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Teléfono</label>
               </div>
-              <div class="relative z-0 w-full mb-6 group">
+              <div class="relative w-full mb-6 group">
                 <textarea type="" rows="8" cols="33" name="repeat_password" id=" floating_repeat_password"
                   class="rounded-lg px-2 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent  border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" " required></textarea>
                 <label for="floating_repeat_password"
-                  class="bg-black2 z-10 px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Escribe
+                  class="bg-black2  px-3 ml-1 peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 - origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Escribe
                   tu consulta</label>
               </div>
 
@@ -724,7 +724,41 @@
 
 
   <script>
+    const encabezados = document.querySelectorAll('.encabezado');
+    const enlaces = document.querySelectorAll('#altura li a')
+    window.addEventListener("scroll",function () {
+      var header = document.querySelector('#navbar');
+      var logo = document.querySelector('#navbar .senior a img'); 
+      header.classList.toggle("ajuste",window.scrollY>0);
+      logo.classList.toggle('ajuste2',window.scrollY>0);
+      enlaces.classList.toggle('py-2',window.scrollY>0);
+    })
+    const observer = new IntersectionObserver((entradas,observador)=>{
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          const id = '#' + entrada.target.id;
+          history.pushState({},'',id);
+          enlaces.forEach(enlace => {
+            enlace.classList.remove('border-white','text-white','bg-primary')
+            const href = enlace.attributes.href.value;
+            if( href === id){
+              enlace.classList.add('border-white','text-white','bg-primary')
+            }
+          })
+        }
+      })
+    },{
+      // threshold: 1,
+      rootMargin:'-100px'
+    });
+
+    encabezados.forEach(encabezado =>{
+      observer.observe(encabezado);
+    })
+
     const abrir = document.getElementById('abrir')
+    const navbar = document.getElementById('navbar')
+
 
     let state = true
     function expandir() {
@@ -733,14 +767,17 @@
       if (state === true) {
 
         abrir.style.maxHeight = altura + `px`;
+        // abrir.style.backgroundColor =  `black`;
+        // navbar.style.backgroundColor =  `black`;
       } else {
         abrir.style.maxHeight = '0';
+        // abrir.style.backgroundColor =  `transparent`;
+        // navbar.style.backgroundColor =  `transparent`;
 
       }
       // document.getElementById("check").checked = false;
 
       state = !state
-      console.log(altura2)
     };
   </script>
 </body>
