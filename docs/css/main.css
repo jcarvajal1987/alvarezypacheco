@@ -499,6 +499,12 @@ video {
 .left-0 {
   left: 0px;
 }
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .top-3 {
   top: 0.75rem;
 }
@@ -620,6 +626,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.min-h-full {
+  min-height: 100%;
+}
 .w-\[100px\] {
   width: 100px;
 }
@@ -709,8 +718,14 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
+.self-start {
+  align-self: flex-start;
+}
 .self-end {
   align-self: flex-end;
+}
+.overflow-auto {
+  overflow: auto;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -746,6 +761,9 @@ video {
 }
 .border-\[1px\] {
   border-width: 1px;
+}
+.border-t-0 {
+  border-top-width: 0px;
 }
 .border-t-\[1px\] {
   border-top-width: 1px;
@@ -869,6 +887,9 @@ video {
 .p-5 {
   padding: 1.25rem;
 }
+.p-7 {
+  padding: 1.75rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -935,8 +956,14 @@ video {
 .pb-16 {
   padding-bottom: 4rem;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+.pr-5 {
+  padding-right: 1.25rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
@@ -1063,6 +1090,10 @@ video {
   --tw-drop-shadow: drop-shadow(1px 0px 2px #c1c1c1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1111,6 +1142,8 @@ html {
     color: #595959;
 }
 .product{
+    pointer-events: all;
+    cursor: pointer;
     background-color: #ffffff;
 }
 
@@ -1126,6 +1159,80 @@ html {
 .product:hover  .text-prod2{
     color: #ffffff;
 }
+
+/* The Modal (background) */
+.modal-trigger {
+    opacity: 1!important;
+    pointer-events: all!important;
+}
+.modal {
+    transition: 1s;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
 
 @media (max-width: 768px) {
     .kyo {width: 210px;
@@ -1366,6 +1473,11 @@ html {
     margin-right: 0px;
   }
 
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .md\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -1385,6 +1497,10 @@ html {
 
   .md\:mr-20 {
     margin-right: 5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:mt-10 {
@@ -1479,6 +1595,11 @@ html {
     padding-right: 2.5rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1487,6 +1608,11 @@ html {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:py-28 {

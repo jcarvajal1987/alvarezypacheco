@@ -103,7 +103,7 @@
               class="montserrat text-4xl font-semibold leading-[-1rem] md:leading-tight tracking-tight sm:text-6xl mb-5">
               Sobre Nosotros
             </h1>
-            
+
             <hr class="border-primary border-[1.3px] mt-[6px]">
             <p
               class="pt-7 montserrat !leading-8 text-center md:text-left  text-lg sm:text-lg font-medium md:pr-0 lg:pr-24 text-stone-900 md:text-black-2 ">
@@ -218,7 +218,7 @@
         </div>
         <div
           class="w-full md:w-11/12 max-w-[1140px] mt-4 md:mt-10 m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-          <a href="#1"
+          <a onclick="modal('modal1')"
             class="drop-shadow-[1px_0px_2px_#c1c1c1] product rounded-md pt-10 pb-12 px-8 md:px-10 items-center flex">
             <span class="text-center">
 
@@ -265,7 +265,7 @@
             <!-- <img src="img/action.svg" width="10" alt="" class="ml-3"> -->
             <!-- <span class="h-[60px] w-[5px] bg-blue-600"></span> -->
           </a>
-          <a href="#2"
+          <a onclick="modal('modal2')"
             class="drop-shadow-[1px_0px_2px_#c1c1c1] product rounded-md pt-10 pb-12 px-8 md:px-10 items-center flex">
             <span class="text-center">
               <svg version="1.1" width="45" class="icono1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -301,7 +301,7 @@
             </span>
             <!-- <img src="img/action.svg" width="10" alt="" class="ml-3"> -->
           </a>
-          <a href="#3"
+          <a onclick="modal('modal3')"
             class="drop-shadow-[1px_0px_2px_#c1c1c1] product rounded-md pt-10 pb-12 px-8 md:px-10 items-center flex">
             <span class="text-center">
               <svg version="1.1" class="icono1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -340,7 +340,7 @@
             </span>
             <!-- <img src="img/action.svg" width="10" alt="" class="ml-3"> -->
           </a>
-          <a href="#4"
+          <a onclick="modal('modal4')"
             class="drop-shadow-[1px_0px_2px_#c1c1c1] product rounded-md pt-10 pb-12 px-8 md:px-10 items-center flex">
             <span class="text-center">
               <svg version="1.1" width="60" class="icono1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -405,7 +405,7 @@
             </span>
             <!-- <img src="img/action.svg" width="10" alt="" class="ml-3"> -->
           </a>
-          <a href="#5"
+          <a onclick="modal('modal5')"
             class="drop-shadow-[1px_0px_2px_#c1c1c1] product rounded-md pt-10 pb-12 px-8 md:px-10 items-center flex">
             <span class="text-center">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -442,7 +442,7 @@
             </span>
             <!-- <img src="img/action.svg" width="10" alt="" class="ml-3"> -->
           </a>
-          <a href="#6"
+          <a onclick="modal('modal6')"
             class="drop-shadow-[1px_0px_2px_#c1c1c1] product rounded-md pt-10 pb-12 px-8 md:px-10 items-center flex">
             <span class="text-center">
               <svg version="1.1" width="35" class="icono1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -515,7 +515,7 @@
 
             <img class="w-full" src="img/estamos.jpg" alt="">
             <span
-              class="flex-1 rounded-b-md px-4 py-5 flex flex-col border-[1px] text-center border-white md:pb-6 mt-3 items-center justify-center">
+              class="flex-1 border-t-0  rounded-b-md px-4 py-5 flex flex-col border-[1px] text-center border-white md:pb-6  items-center justify-center">
               <h2 class="text-white montserrat text-xl
             sm:text-lg font-bold !leading-6">Quiebra tus deudas.</h2>
               <p class="montserrat !leading-6 md:!leading-5 pt-4 md:pt-2 text-md sm:text-sm font-medium text-white">
@@ -531,7 +531,7 @@
 
             <img class="w-full" src="img/contigo.jpg" alt="">
             <span
-              class="flex-1 rounded-b-md px-4 py-5 flex flex-col border-[1px] text-center border-white md:pb-6 mt-3 items-center justify-center">
+              class="flex-1 border-t-0  rounded-b-md px-4 py-5 flex flex-col border-[1px] text-center border-white md:pb-6  items-center justify-center">
               <h2 class="text-white montserrat text-xl
             sm:text-lg font-bold !leading-6">!Estamos contigo!</h2>
               <p class="montserrat !leading-6 md:!leading-5 pt-4 md:pt-2 text-md sm:text-sm font-medium text-white">
@@ -547,7 +547,7 @@
 
             <img class="w-full" src="img/insolvencia.jpg" alt="">
             <span
-              class="flex-1 rounded-b-md px-4 py-5 flex flex-col border-[1px] text-center border-white md:pb-6 mt-3 items-center justify-center">
+              class="flex-1 rounded-b-md px-4 py-5 flex flex-col border-[1px] border-t-0 text-center border-white md:pb-6  items-center justify-center">
               <h2 class="text-white montserrat text-xl
             sm:text-lg font-bold !leading-6">¿El Dinero ya no alcanza?</h2>
               <p class="montserrat !leading-6 md:!leading-5 pt-4 md:pt-2 text-md sm:text-sm font-medium text-white">
@@ -757,20 +757,221 @@
         <img class="flex" src="img/logo-white.svg" width="290" alt="">
         <img class="flex" src="img/apr.svg" width="190" alt="">
       </div>
-      
-      <div class="w-full md:w-11/12 max-w-[1140px] text-white py-4 m-auto flex flex-row justify-center border-t-[1px] border-[#6C6C6C]">
-       <span class="margin-auto flex">
-         © 2008 - 2023
 
-       </span>
+      <div
+        class="w-full md:w-11/12 max-w-[1140px] text-white py-4 m-auto flex flex-row justify-center border-t-[1px] border-[#6C6C6C]">
+        <span class="margin-auto flex">
+          © 2008 - 2023
+
+        </span>
       </div>
     </div>
   </footer>
 
+  <div id="modal1" class="modal transition h-full">
+    <div class="bg-white overflow-auto col-start-1 row-start-1 flex justify-center w-full flex-col min-h-full"
+      onclick="event.cancelBubble=true;if (event.stopPropagation) event.stopPropagation();">
+      <div class="flex p-5 fixed right-0 top-0 bg-white rounded-full drop-shadow-md">
+        <img onclick="modal('modal1')" width="30px" src="img/close.svg" alt="">
+      </div>
+      <div class="p-7 md:py-20 md:px-0 montserrat w-full flex">
+        <div class="w-full md:w-11/12 max-w-[1240px] m-auto flex items-center flex-col md:flex-row">
+          <div class="w-full md:w-auto self-start">
+            <img class="hidden md:block" src="img/servicio-concursal.jpg" alt="">
+            <img class="block md:hidden w-full" src="img/servicio-concursal-movil.jpg" alt="">
+          </div>
+          <div class="text-left md:mx-10 mt-5 md:mt-0 flex-col">
+            <h1 class="montserrat text-4xl font-semibold leading-[-1rem] !md:leading-tight tracking-tight sm:text-5xl ">
+              Derecho Concursal
+            </h1>
+            <hr class=" border-primary flex w-full border-[1.5px] mt-5 md:mt-4">
+            <p class="flex flex-1 pt-5 text-lg md:pt-7 pb-5   text-left">Los servicios de Derecho Concursal son :</p>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Solicitud de Liquidación Voluntaria de Personas.</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Solicitud de Solicitud de Liquidación Voluntaria de Empresas.</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Reorganizaciones por Ley 20.720.</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Solicitud de Solicitud de Representante de Créditos de Acreedores.</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Representante de Acreedores en solicitud de notas de Débito.</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Apoderado de Liquidadores Concursales.</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Apoderado de Veedores Concursales.</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Estudio de Factibilidad jurídico – Técnica en solicitudes de Quiebra
+                (Liquidación o Reorganización).</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal2" class="modal transition h-full">
+    <div class="bg-white overflow-auto col-start-1 row-start-1 flex justify-center w-full flex-col min-h-full"
+      onclick="event.cancelBubble=true;if (event.stopPropagation) event.stopPropagation();">
+      <div class="flex p-5 fixed right-0 top-0 bg-white rounded-full drop-shadow-md">
+        <img onclick="modal('modal2')" width="30px" src="img/close.svg" alt="">
+      </div>
+      <div class="p-7 md:py-20 md:px-0 montserrat w-full flex">
+        <div class="w-full md:w-11/12 max-w-[1240px] m-auto flex items-center flex-col md:flex-row">
+          <div class="w-full md:w-auto self-start">
+            <img class="hidden md:block" src="img/juicios-civiles.jpg" alt="">
+            <img class="block md:hidden w-full" src="img/juicios-civiles-movil.jpg" alt="">
+          </div>
+          <div class="text-left md:mx-10 mt-5 md:mt-0 flex-col">
+            <h1 class="montserrat text-4xl font-semibold leading-[-1rem] !md:leading-tight tracking-tight sm:text-5xl ">
+              Juicios Civiles
+            </h1>
+            <hr class=" border-primary flex w-full border-[1.5px] mt-5 md:mt-4">
+            <p class="flex flex-1 pt-5 text-lg md:pt-7 pb-5   text-left">Los servicios de Juicios Civiles son :</p>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios de Arriendo</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Incidentes</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Tercerías</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Embargos</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Remates</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios de Comodato</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios de Comodato Precario</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios de Partición</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios Ejecutivos</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios Ordinarios</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios Sumarios</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Demanda de Indemnización de Perjuicios</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Cambios de Nombres</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Rectificación de Partidas</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Cobros de Cheques, Letras, Pagares y Facturas (cobranza prejudicial y judicial)</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Defensa a deudores</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Solicitud de Prescripción Civil</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Posesiones Efectivas Testadas</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Declaración de Interdicción</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Juicios Hipotecarios</p>
+            </span>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Asesorías en causas civiles</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal3" class="modal transition h-full">
+    <div class="bg-white overflow-auto col-start-1 row-start-1 flex justify-center w-full flex-col min-h-full"
+      onclick="event.cancelBubble=true;if (event.stopPropagation) event.stopPropagation();">
+      <div class="flex p-5 fixed right-0 top-0 bg-white rounded-full drop-shadow-md">
+        <img onclick="modal('modal3')" width="30px" src="img/close.svg" alt="">
+      </div>
+      <div class="p-7 md:py-20 md:px-0 montserrat w-full flex">
+        <div class="w-full md:w-11/12 max-w-[1240px] m-auto flex items-center flex-col md:flex-row">
+          <div class="w-full md:w-auto self-start">
+            <img class="hidden md:block" src="img/laborales.jpg" alt="">
+            <img class="block md:hidden w-full" src="img/laborales-movil.jpg" alt="">
+          </div>
+          <div class="text-left md:mx-10 mt-5 md:mt-0 flex-col">
+            <h1 class="montserrat text-4xl font-semibold leading-[-1rem] !md:leading-tight tracking-tight sm:text-5xl ">
+              Juicios Laborales
+            </h1>
+            <hr class=" border-primary flex w-full border-[1.5px] mt-5 md:mt-4">
+            <p class="flex flex-1 pt-5 text-lg md:pt-7 pb-5   text-left">Los servicios de Juicios Laborales son :</p>
+            <span class="flex flex-row items-center pb-4">
+              <div class="flex pr-5 md:px-5">•</div>
+              <p class="flex flex-1 text-lg ">Favor redactar</p>
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
   <script>
+
+
+
+
+
+
+
+
+
     const encabezados = document.querySelectorAll('.encabezado');
     const enlaces = document.querySelectorAll('#altura li a')
     window.addEventListener("scroll", function () {
@@ -778,7 +979,6 @@
       var logo = document.querySelector('#navbar .senior a img');
       header.classList.toggle("ajuste", window.scrollY > 0);
       logo.classList.toggle('ajuste2', window.scrollY > 0);
-      enlaces.classList.toggle('py-2', window.scrollY > 0);
     })
     const observer = new IntersectionObserver((entradas, observador) => {
       entradas.forEach(entrada => {
@@ -826,6 +1026,41 @@
 
       state = !state
     };
+
+
+    //     // Get the modal
+    // var modal = document.getElementById("myModal");
+
+    // // Get the button that opens the modal
+    // var btn = document.getElementById("myBtn");
+
+    // // Get the <span> element that closes the modal
+    // var span = document.getElementsByClassName("close")[0];
+
+    // // When the user clicks on the button, open the modal
+    // btn.onclick = function() {
+    //   modal.style.display = "block";
+    // }
+
+    // // When the user clicks on <span> (x), close the modal
+    // span.onclick = function() {
+    //   modal.style.display = "none";
+    // }
+
+    // // When the user clicks anywhere outside of the modal, close it
+    // window.onclick = function(event) {
+    //   if (event.target == modal) {
+    //     modal.style.display = "none";
+    //   }
+    // }
+
+    function modal(el_id) {
+      console.log(el_id)
+      document.getElementById(el_id).classList.toggle("modal-trigger");
+      document.body.classList.toggle("overflow-hidden");
+
+    };
+
   </script>
 </body>
 
