@@ -10,7 +10,7 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 .ajuste{
-    background-color: #0B3452 ;
+    background-color: #0B3452!important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .ajuste2{
@@ -50,7 +50,9 @@ html {
 .product:hover  .text-prod2{
     color: #ffffff;
 }
-
+.transition2{
+    transition: 1ms;
+}
 /* The Modal (background) */
 .modal-trigger {
     opacity: 1!important;
@@ -128,6 +130,9 @@ html {
 @media (max-width: 768px) {
     .kyo {width: 210px;
     margin-top: 10px;}
+    .bg-negro{
+        background-color: #000000;
+    }
 }
 
 @media (min-width: 768px) {
